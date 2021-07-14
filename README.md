@@ -20,3 +20,11 @@ formData.param1 = "テスト";
 ```javascript
 data: formData
 ```
+```javascript
+{
+      "param1": "テスト"
+}
+```
+
+
+というフォーマットにjQueryに加工されてサーバのPHPが呼び出されます
