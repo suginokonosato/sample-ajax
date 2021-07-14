@@ -19,7 +19,7 @@ $(function(){
         formData["param1"] = "テスト";
 
         $.ajax({
-            url: "http://localhost/app/form-action-json-same.php",
+            url: "http://localhost/app/form-action-json.php",
             type: "GET",
             data: formData,
             cache: false
@@ -27,8 +27,8 @@ $(function(){
         .done(function( data, textStatus ){
             console.log( "status:" + textStatus );
             console.log( "data:" + JSON.stringify(data, null, "	") );
-	    
-	    $("#content").text(JSON.stringify(data, null, "	") );
+
+            $("#content").text( JSON.stringify(data, null, "	") );
 
         })
         .fail(function(jqXHR, textStatus, errorThrown ){
@@ -46,5 +46,8 @@ $(function(){
 </script>
 
 <input id="btn" name="btn" type="button" value="実行">
+<div id="content" style="white-space:pre">
+</div>
+
 </body>
 </html>
