@@ -39,3 +39,4 @@ param1=%E3%83%86%E3%82%B9%E3%83%88&_=1626243759099
 $json = new stdClass;
 $json->get = $_GET;
 ```
+## ブラウザに返す為のjsonフォーマットの文字列をjson_encode関数で作成する
