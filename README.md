@@ -2,7 +2,7 @@
 授業中のリソースの置き場所
 
 ajaxのgetを行う為のテンプレート
-##jQuery側のjsonオブジェクトの準備
+## jQuery側のjsonオブジェクトの準備
 ```javascript
 formData = {};
 ```
@@ -16,4 +16,7 @@ formDataのプロパティはformDat.プロパティ文字列と書くことも�
 ```javascript
 formData.param1 = "テスト";
 ```
-##jQuery側からサーバへデータを送る
+## jQuery側からサーバへデータを送る
+```javascript
+data: formData
+```
